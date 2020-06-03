@@ -5,9 +5,8 @@ This project must be responsive, meaning it should work on smaller screen sizes,
 
 Browse the designs below and when you find one that *speaks to you*, get started building your site! Each project comes with a desktop and mobile design along with assets.
 
-* [Design 1 - Jewel Hub](https://hychalknotes.s3.amazonaws.com/project-2-jewel-hub-folder--conEd.zip)
 
-* [Design 2 - Treasurie](https://hychalknotes.s3.amazonaws.com/project-2-treasurie-folder--conEd.zip)
+* [Design - Treasurie](https://hychalknotes.s3.amazonaws.com/project-2-treasurie-folder--conEd.zip)
 
 
 ## Requirements
