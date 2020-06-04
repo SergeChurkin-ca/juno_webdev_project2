@@ -1,7 +1,40 @@
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
+    ul {
+        list-style: none;
+    }
+    
+    a {
+        text-decoration: none;
+    }
+    
+    .wrapper {
+        max-width: 1080px;
+        width: 90%;
+        margin: 0 auto;
+    }
+    
+    .flexcontainer {
+        display: flex;
+    }
+    
+    .logo {
+        color: #222428;
+        display: flex;
+        flex: 1 2 70%;
+    }
+    
+    .menu-item {
+        color: #00476a;
+    }
+    
+    ul {
+        display: flex;
+        flex: 2 1 30%;
+    }
+    
+    ul li {
+        display: flex;
+        flex: 1 1 auto;
+        align-items: center;
+        justify-content: flex-end;
+        padding: 10%;
+    }
