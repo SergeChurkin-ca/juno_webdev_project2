@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Sirin+Stencil&display=swap');
+.logo,
+h1,
+h3,
+label,
+footer {
+    font-family: 'Sirin Stencil', cursive;
+}
+
+nav,
+h2,
+p,
+button,
+h4 {
+    font-family: 'Lato', sans-serif;
+}
+
+.logo {
+    font-size: 35px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+
+nav,
+button {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+h1 {
+    font-size: 76px;
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 30px;
+    font-weight: 400;
+}
+
+h3,
+label {
+    font-size: 40px;
+}
+
+h4 {
+    font-size: 28px;
+    font-weight: 400;
+}
