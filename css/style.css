@@ -1,40 +1,117 @@
-    ul {
-        list-style: none;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
-    .wrapper {
-        max-width: 1080px;
-        width: 90%;
-        margin: 0 auto;
-    }
-    
-    .flexcontainer {
-        display: flex;
-    }
-    
-    .logo {
-        color: #222428;
-        display: flex;
-        flex: 1 2 70%;
-    }
-    
-    .menu-item {
-        color: #00476a;
-    }
-    
-    ul {
-        display: flex;
-        flex: 2 1 30%;
-    }
-    
-    ul li {
-        display: flex;
-        flex: 1 1 auto;
-        align-items: center;
-        justify-content: flex-end;
-        padding: 10%;
-    }
+        ul {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        .wrapper {
+            max-width: 1600px;
+            width: 90%;
+            margin: 0 0 0 5%;
+        }
+        
+        .flexcontainer {
+            display: flex;
+        }
+        
+        .logo {
+            color: #222428;
+            display: flex;
+            flex: 1 2 70%;
+        }
+        
+        .menu-item {
+            color: #00476a;
+        }
+        
+        nav ul {
+            display: flex;
+            flex: 2 1 30%;
+        }
+        
+        nav ul li {
+            flex: 1 1 auto;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 3%;
+        }
+        
+        header {
+            display: inliflex;
+            background-image: url('../assets/header-image.jpg');
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        
+        .heading {
+            margin: 140px 0 5px 115px;
+            width: 50%;
+            display: block;
+        }
+        /* -------------------------------------- */
+        /*  BLOG */
+        /* -------------------------------------- */
+        
+        #blog {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            height: 600px;
+            vertical-align: middle;
+        }
+        
+        #blog .wrapper {
+            width: 60%;
+        }
+        /* -------------------------------------- */
+        /*  ADVENTURES */
+        /* -------------------------------------- */
+        
+        #adventures {
+            display: flex;
+            background-color: #E5F8FC;
+            text-align: center;
+            height: 930px;
+        }
+        
+        #adventures ul {
+            display: flex;
+            justify-content: space-around;
+            padding: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .image-container {
+            width: 300px;
+            height: 300px;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+        
+        .image-container img {
+            height: 100%;
+            transform: scale(1.7);
+        }
+        /* -------------------------------------- */
+        /*  SHOP */
+        /* -------------------------------------- */
+        
+        #shop {
+            height: 850px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
+        
+        #shop .wrapper {
+            display: flex;
+            justify-content: flex-end;
+        }
+        /* light blue color background: #E5F8FC
+box shadow color: #B0E5ED */
