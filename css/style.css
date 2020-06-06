@@ -12,10 +12,16 @@ button {
     background-color: #00476a;
     color: #ffffff;
 }
+
+/* -------------------------------------- */
+/*  NAVIGATION 
+/* -------------------------------------- */
+
 .wrapper {
     max-width: 1600px;
     width: 90%;
     margin: 0 0 0 5%;
+    margin: 0 auto;
 }
 
 .flexcontainer {
@@ -64,7 +70,7 @@ header {
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: calc(70vh + 14em);
+    height: calc(8vh + 20%);
 }
 
 .heading {
@@ -80,12 +86,29 @@ header {
     display: flex;
     justify-content: center;
     text-align: center;
-    height: 600px;
+    min-height: 32vh;
+     height: calc(8vh + 20%);
     vertical-align: middle;
 }
 
 #blog .wrapper {
     width: 60%;
+}
+
+.fa-chevron-right,
+.fa-chevron-left {
+    display: flex;
+    padding: 2rem;
+    font-size: 5rem;
+}
+
+.fa-chevron-right {
+    float: right;
+      
+}
+.fa-chevron-left {
+    float: left;
+
 }
 /* -------------------------------------- */
 /*  ADVENTURES */
@@ -96,7 +119,7 @@ header {
     background-color: #e5f8fc;
     text-align: center;
     height: calc(100% - 20rem);
-    padding: 0 0 15rem 0;
+    padding: 3rem 0 20rem 0;
 }
 
 #adventures ul {
@@ -107,8 +130,8 @@ header {
 }
 
 .image-container {
-    width: 300px;
-    height: 300px;
+    width: 380px;
+    height: 380px;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -116,7 +139,7 @@ header {
 
 .image-container img {
     height: 100%;
-    transform: scale(1.7);
+    transform: scale(1.4);
 }
 
 .wrapper li {
@@ -127,7 +150,12 @@ header {
     color: #ffffff;
     background-color: #0e191e;
     position: absolute;
-    top: 12rem;
+    top: 19rem;
+    left: -2rem;
+    width: 200px;
+    height: 80px;
+   
+   
 }
 /* -------------------------------------- */
 /*  SHOP */
@@ -145,7 +173,6 @@ header {
     display: flex;
     flex-wrap: wrap;
     /*     width: calc((100%/2) - 4%);*/
-
     align-items: flex-start;
 }
 
@@ -153,9 +180,7 @@ header {
     margin-top: -10rem;
     top: 5rem;
     box-shadow: 3rem 3rem 0 rgba(157, 216, 229, 0.99);
-
     display: flex;
-
     min-width: 25rem;
     width: calc((100% / 2) - 4rem);
 }
@@ -207,8 +232,9 @@ textarea {
 footer {
     text-align: center;
     background-color: #0e2018;
-    height: 3rem;
     color: #ffffff;
+    height: 5rem;
+    padding: 0.5rem;
 }
 /* light blue color background: #E5F8FC
 box shadow color: #B0E5ED */
