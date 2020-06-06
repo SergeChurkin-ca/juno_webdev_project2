@@ -1,117 +1,214 @@
-        ul {
-            list-style: none;
-        }
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    width: 10rem;
+    height: 5rem;
+    background-color: #00476a;
+    color: #ffffff;
+}
+.wrapper {
+    max-width: 1600px;
+    width: 90%;
+    margin: 0 0 0 5%;
+}
+
+.flexcontainer {
+    display: flex;
+}
+
+@media(max-width: 800px) {
+    .flexcontainer {
+        flex-direction: column;
+       align-items: stretch;
         
-        a {
-            text-decoration: none;
-        }
-        
-        .wrapper {
-            max-width: 1600px;
-            width: 90%;
-            margin: 0 0 0 5%;
-        }
-        
-        .flexcontainer {
-            display: flex;
-        }
-        
-        .logo {
-            color: #222428;
-            display: flex;
-            flex: 1 2 70%;
-        }
-        
-        .menu-item {
-            color: #00476a;
-        }
-        
-        nav ul {
-            display: flex;
-            flex: 2 1 30%;
-        }
-        
-        nav ul li {
-            flex: 1 1 auto;
-            display: flex;
-            align-items: center;
-            justify-content: flex-end;
-            padding: 3%;
-        }
-        
-        header {
-            display: inliflex;
-            background-image: url('../assets/header-image.jpg');
-            background-size: cover;
-            background-position: center center;
-            background-repeat: no-repeat;
-            height: 100vh;
-        }
-        
-        .heading {
-            margin: 140px 0 5px 115px;
-            width: 50%;
-            display: block;
-        }
-        /* -------------------------------------- */
-        /*  BLOG */
-        /* -------------------------------------- */
-        
-        #blog {
-            display: flex;
-            justify-content: center;
-            text-align: center;
-            height: 600px;
-            vertical-align: middle;
-        }
-        
-        #blog .wrapper {
-            width: 60%;
-        }
-        /* -------------------------------------- */
-        /*  ADVENTURES */
-        /* -------------------------------------- */
-        
-        #adventures {
-            display: flex;
-            background-color: #E5F8FC;
-            text-align: center;
-            height: 930px;
-        }
-        
-        #adventures ul {
-            display: flex;
-            justify-content: space-around;
-            padding: 20px;
-            flex-wrap: wrap;
-        }
-        
-        .image-container {
-            width: 300px;
-            height: 300px;
-            position: relative;
-            overflow: hidden;
-            border-radius: 50%;
-        }
-        
-        .image-container img {
-            height: 100%;
-            transform: scale(1.7);
-        }
-        /* -------------------------------------- */
-        /*  SHOP */
-        /* -------------------------------------- */
-        
-        #shop {
-            height: 850px;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-        }
-        
-        #shop .wrapper {
-            display: flex;
-            justify-content: flex-end;
-        }
-        /* light blue color background: #E5F8FC
+    }
+    .logo {
+       justify-content: center;
+    }
+}
+
+.logo {
+    color: #222428;
+    display: flex;
+    flex: 1 2 70%;
+}
+
+.menu-item,
+h3,
+.heading h1 {
+    color: #00476a;
+}
+
+nav ul {
+    display: flex;
+    flex: 2 1 30%;
+}
+
+nav ul li {
+    flex: 1 1 auto;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    padding: 3%;
+}
+
+header {
+    display: inliine-flex;
+    background-image: url("../assets/header-image.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: calc(70vh + 14em);
+}
+
+.heading {
+    margin: 140px 0 5px 115px;
+    width: 50%;
+    display: block;
+}
+/* -------------------------------------- */
+/*  BLOG */
+/* -------------------------------------- */
+
+#blog {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    height: 600px;
+    vertical-align: middle;
+}
+
+#blog .wrapper {
+    width: 60%;
+}
+/* -------------------------------------- */
+/*  ADVENTURES */
+/* -------------------------------------- */
+
+#adventures {
+    display: flex;
+    background-color: #e5f8fc;
+    text-align: center;
+    height: calc(100% - 20rem);
+    padding: 0 0 15rem 0;
+}
+
+#adventures ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.image-container {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 50%;
+}
+
+.image-container img {
+    height: 100%;
+    transform: scale(1.7);
+}
+
+.wrapper li {
+    position: relative;
+}
+
+.img-heading {
+    color: #ffffff;
+    background-color: #0e191e;
+    position: absolute;
+    top: 12rem;
+}
+/* -------------------------------------- */
+/*  SHOP */
+/* -------------------------------------- */
+
+#shop {
+    width: 100%;
+    display: flex;
+    height: calc(100% - 20rem);
+    justify-content: center;
+    align-items: baseline;
+    padding: 3rem;
+}
+#shop .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    /*     width: calc((100%/2) - 4%);*/
+
+    align-items: flex-start;
+}
+
+#shop img {
+    margin-top: -10rem;
+    top: 5rem;
+    box-shadow: 3rem 3rem 0 rgba(157, 216, 229, 0.99);
+
+    display: flex;
+
+    min-width: 25rem;
+    width: calc((100% / 2) - 4rem);
+}
+.shop-info {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    padding: 3rem;
+}
+
+@media (max-width: 980px) {
+    #shop .wrapper {
+    }
+    .shop-info {
+        width: 100%;
+    }
+}
+/* -------------------------------------- *
+/*  CONTACT */
+/* -------------------------------------- */
+
+#contact {
+    height: 460px;
+    background-color: #222428;
+    text-align: center;
+}
+#contact h3 {
+    color: #ffffff;
+}
+form {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 90%;
+}
+input {
+    width: 50%;
+    padding: 1rem;
+}
+
+textarea {
+    width: 100%;
+}
+
+#contact button {
+    width: 20%;
+}
+
+footer {
+    text-align: center;
+    background-color: #0e2018;
+    height: 3rem;
+    color: #ffffff;
+}
+/* light blue color background: #E5F8FC
 box shadow color: #B0E5ED */
