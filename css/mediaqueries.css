@@ -1,5 +1,5 @@
 /* ------------------------------------ 
-NAVIGATION AND BLOG WRAPPERS 
+NAVIGATION AND BLOG WRAPPERS RESIZE
 ----------------------------------- */
 
 @media(max-width: 420px) {
@@ -59,10 +59,12 @@ NAVIGATION AND BLOG WRAPPERS
     }
 }
 
-@media(min-width: 1200px) {
-    #blog .wraper h3 {
+@media(min-width: 2000px) {
+    #blog .wrapper h3,
+    p {
         line-height: 5rem;
-        width: 50%;
+        width: 30vw;
         margin: 0 auto;
+        margin-top: 5rem;
     }
 }
