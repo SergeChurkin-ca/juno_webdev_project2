@@ -40,7 +40,7 @@ h2 {
 }
 
 h3 {
-    font-size: 40px;
+    /* font-size: 40px; */
     font-size: calc(25px + (40 - 25) * ((100vw - 300px) / (1600 - 300)));
     font-weight: 400;
 }
@@ -65,5 +65,6 @@ footer p {
 
 p {
     font-size: 20px;
+    /* font-size: calc(20px + (30 - 20) * ((100vw - 300px) / (1600 - 300))); */
     font-weight: 400;
 }

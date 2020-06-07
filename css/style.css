@@ -1,318 +1,352 @@
-    ul {
-        list-style: none;
-    }
-    
-    a {
-        text-decoration: none;
-    }
-    
-    button {
-        width: 10rem;
-        height: 3.7rem;
-        background-color: #00476a;
-        color: #ffffff;
-        border: none;
-    }
-    
-    .logo,
-    h2,
-    p {
-        color: #222428
-    }
-    /* --------------------------------------
+        ul {
+            list-style: none;
+        }
+        
+        a {
+            text-decoration: none;
+        }
+        
+        button {
+            width: 10rem;
+            height: 3.7rem;
+            background-color: #00476a;
+            color: #ffffff;
+            border: none;
+        }
+        
+        .logo,
+        h2,
+        p {
+            color: #222428
+        }
+        /* --------------------------------------
  NAVIGATION -----------------------------
 ----------------------------------------- */
-    
-    .wrapper {
-        max-width: 1600px;
-        width: 90%;
-        /* margin: 0 0 0 5%; */
-        margin: 0 auto;
-    }
-    
-    .flexcontainer {
-        display: flex;
-    }
-    
-    .logo {
-        color: #222428;
-        display: flex;
-        flex: 1 2 80%;
-    }
-    
-    .menu-item,
-    h3,
-    .heading h1 {
-        color: #00476a;
-    }
-    
-    nav ul {
-        display: flex;
-        flex: 2 1 20%;
-        padding: 0 5rem;
-    }
-    
-    nav ul li {
-        flex: 1 1 auto;
-        display: flex;
-        align-items: center;
-        justify-content: flex-end;
-        padding: 0 1.7rem;
-    }
-    
-    nav a:hover::after,
-    nav a:focus::after {
-        border-top: 0.3rem solid rgb(116, 224, 253);
-        display: block;
-        position: relative;
-        margin: 0 auto;
-        width: 100%;
-        content: "";
-    }
-    /* --------------------------------------
+        
+        .wrapper {
+            max-width: 1600px;
+            width: 90%;
+            /* margin: 0 0 0 5%; */
+            margin: 0 auto;
+        }
+        
+        .flexcontainer {
+            display: flex;
+        }
+        
+        .logo {
+            color: #222428;
+            display: flex;
+            flex: 1 2 80%;
+        }
+        
+        .menu-item,
+        h3,
+        .heading h1 {
+            color: #00476a;
+        }
+        
+        nav ul {
+            display: flex;
+            flex: 2 1 20%;
+            padding: 0 5rem;
+        }
+        
+        nav ul li {
+            flex: 1 1 auto;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding: 0 1.7rem;
+        }
+        
+        nav a:hover::after,
+        nav a:focus::after {
+            border-top: 0.3rem solid rgb(116, 224, 253);
+            display: block;
+            position: relative;
+            margin: 0 auto;
+            width: 100%;
+            content: "";
+        }
+        /* --------------------------------------
 HEADER -----------------------------
 ----------------------------------------- */
-    
-    header {
-        display: inliine-flex;
-        background-image: url("../assets/header-image.jpg");
-        background-size: cover;
-        background-position: center center;
-        background-repeat: no-repeat;
-        padding-bottom: 5rem;
-        min-height: 34vh;
-        height: calc(90vh - 2%);
-    }
-    
-    @media(min-width: 2000px) {
+        
         header {
-            height: calc(34vh + 30rem);
+            display: inliine-flex;
+            background-image: url("../assets/header-image.jpg");
+            background-size: cover;
+            background-position: center center;
+            background-repeat: no-repeat;
+            padding-bottom: 5rem;
+            min-height: 34vh;
+            height: calc(90vh - 2%);
         }
-    }
-    
-    .heading {
-        margin-left: 5rem;
-        width: 50%;
-    }
-    /* --------------------------------------
+        
+        @media(min-width: 2000px) {
+            header {
+                height: calc(34vh + 30rem);
+            }
+        }
+        
+        .heading {
+            margin-left: 5rem;
+            width: 50%;
+        }
+        /* --------------------------------------
 -------- BLOG ------------------------
 -------------------------------------- */
-    
-    #blog {
-        display: flex;
-        justify-content: center;
-        text-align: center;
-        align-content: center;
-        min-height: 32vh;
-        height: calc(8vh + 20%);
-        vertical-align: middle;
-        padding: 0 2rem 2rem;
-        word-spacing: 0.1rem;
-        position: relative;
-    }
-    
-    #blog .wrapper {
-        width: 60%;
-        line-height: 2rem;
-        justify-content: center;
-        margin-top: 3rem;
-    }
-    
-    #blog h2::after {
-        border-top: 0.3rem solid rgb(116, 224, 253);
-        display: block;
-        position: relative;
-        margin: 0.7rem auto;
-        width: 8rem;
-        content: "";
-    }
-    
-    #blog h3 {
-        display: flex;
-        width: 43%;
-        margin: 0 auto;
-        line-height: 2.8rem;
-        justify-content: center;
-        text-align: center;
-    }
-    
-    .fa-chevron-right,
-    .fa-chevron-left {
-        display: flex;
-        padding: 2rem;
-        font-size: 3.5rem;
-        position: absolute;
-        top: 40%;
-    }
-    
-    .fa-chevron-right {
-        right: 10%;
-    }
-    
-    .fa-chevron-left {
-        left: 10%;
-    }
-    /* --------------------------------------
+        
+        #blog {
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            align-content: center;
+            min-height: 32vh;
+            height: calc(8vh + 20%);
+            vertical-align: middle;
+            padding: 0 2rem 2rem;
+            word-spacing: 0.1rem;
+            position: relative;
+        }
+        
+        #blog .wrapper {
+            width: 60%;
+            line-height: 2rem;
+            justify-content: center;
+            margin-top: 3rem;
+        }
+        
+        #blog h2::after {
+            border-top: 0.3rem solid rgb(116, 224, 253);
+            display: block;
+            position: relative;
+            margin: 0.7rem auto;
+            width: 8rem;
+            content: "";
+        }
+        
+        #blog .wrapper h3 {
+            display: flex;
+            width: 42%;
+            margin: 0 auto;
+            line-height: 2.8rem;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        .fa-chevron-right,
+        .fa-chevron-left {
+            display: flex;
+            padding: 2rem;
+            font-size: 3.5rem;
+            position: absolute;
+            top: 40%;
+        }
+        
+        .fa-chevron-right {
+            right: 10%;
+        }
+        
+        .fa-chevron-left {
+            left: 10%;
+        }
+        /* --------------------------------------
  ADVENTURES
 -------------------------------------- */
-    
-    #adventures {
-        display: flex;
-        background-color: #e5f8fc;
-        text-align: center;
-        /* height: calc(100% - 20rem); */
-        padding: 5rem 0 20rem 0;
-    }
-    
-    #adventures ul {
-        display: flex;
-        justify-content: space-around;
-        padding: 1rem;
-        flex-wrap: wrap;
-    }
-    
-    .image-container {
-        width: 24rem;
-        height: 24rem;
-        position: relative;
-        overflow: hidden;
-        border-radius: 50%;
-    }
-    
-    .image-container img {
-        height: 100%;
-        transform: scale(1.4);
-    }
-    
-    .wrapper li {
-        position: relative;
-    }
-    
-    .img-heading {
-        color: #ffffff;
-        background-color: #0e191e;
-        position: absolute;
-        top: 17.3rem;
-        left: -2rem;
-        width: 200px;
-        height: 4.3rem;
-    }
-    
-    h4 {
-        margin: 1rem auto;
-    }
-    /* --------------------------------------
-SHOP
--------------------------------------- */
-    
-    #shop {
-        width: 100%;
-        display: flex;
-        height: calc(55vh + 20%);
-        justify-content: center;
-        align-items: baseline;
-        padding: 3rem 0 11rem 3rem;
-        margin: 0 auto;
-    }
-    
-    #shop .wrapper {
-        display: flex;
-        flex-wrap: wrap;
-        align-items: flex-start;
-    }
-    
-    #shop img {
-        margin-top: -10rem;
-        top: 5rem;
-        box-shadow: 3rem 3rem 0 rgba(157, 216, 229, 0.99);
-        display: flex;
-        min-width: 15rem;
-        width: calc(60% - 10em - 10em);
-    }
-    
-    .shop-info {
-        display: flex;
-        flex-direction: column;
-        width: 45%;
-        padding: 3rem;
-    }
-    
-    @media (max-width: 980px) {
-        #shop .wrapper,
-        .shop-info {
+        
+        #adventures {
+            display: flex;
+            background-color: #e5f8fc;
+            text-align: center;
+            /* height: calc(100% - 20rem); */
+            padding: 5rem 0 20rem 0;
+        }
+        
+        #adventures ul {
+            display: flex;
+            justify-content: space-around;
+            padding: 1rem;
+            flex-wrap: wrap;
+        }
+        
+        .image-container {
+            width: 24rem;
+            height: 24rem;
+            position: relative;
+            overflow: hidden;
+            border-radius: 50%;
+        }
+        
+        .image-container img {
+            height: 100%;
+            transform: scale(1.4);
+        }
+        /* .turkey {
+            background: url(../assets/turkey.jpg);
+        }
+        
+        .morocco {
+            background: url(../assets/morocco.jpg);
+        }
+        
+        .senegal {
+            background: url(../assets/senegal.jpg);
+        }
+        
+        .image-container {
+            background-repeat: no-repeat;
+            background-size: cover;
+            overflow: hidden;
+            border-radius: 50%;
+            width: 24rem;
+            height: 24rem;
+        } */
+        
+        .wrapper li {
+            position: relative;
+        }
+        
+        .img-heading {
+            color: #ffffff;
+            background-color: #0e191e;
+            position: absolute;
+            top: 17.3rem;
+            left: -2rem;
+            width: 200px;
+            height: 4.3rem;
+        }
+        
+        h4 {
+            margin: 1rem auto;
+        }
+        
+        @media (max-width: 430px) {
+            ul li .image-container {
+                max-width: 18rem;
+                max-height: 18rem;
+                align-content: center;
+            }
+            .img-heading {
+                top: 12rem;
+                left: 3rem;
+            }
+        }
+        /* -------------------------------------- 
+------  SHOP
+        -------------------------------------- */
+        
+        #shop {
             width: 100%;
+            display: flex;
+            height: calc(55vh + 20%);
+            justify-content: center;
+            align-items: baseline;
+            padding: 3rem 0 11rem 3rem;
+            margin: 0 auto;
         }
+        
+        #shop .wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        
         #shop img {
-            width: 80%;
+            margin-top: -10rem;
+            top: 5rem;
+            box-shadow: 3rem 3rem 0 rgba(157, 216, 229, 0.99);
+            display: flex;
+            min-width: 15rem;
+            width: calc(60% - 10em - 10em);
         }
-    }
-    /* --------------------------------------
+        
+        .shop-info {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+            padding: 3rem;
+        }
+        
+        @media (max-width: 980px) {
+            #shop .wrapper,
+            .shop-info {
+                width: 100%;
+            }
+            #shop img {
+                width: 80%;
+            }
+        }
+        /* --------------------------------------
 CONTACT
 -------------------------------------- */
-    
-    #contact {
-        height: 54rem;
-        background-color: #222428;
-        text-align: center;
-        padding: 6rem 0 0 0;
-    }
-    
-    #contact h3 {
-        color: #ffffff;
-    }
-    
-    form {
-        display: inline-flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        width: 90%;
-    }
-    
-    input,
-    textarea {
-        background-color: #222428;
-        margin: 2rem 0 0 5%;
-        border: solid 0.1em #00C6FF;
-        padding: 3rem;
-        color: #ffffff;
-        font-size: 1.5rem;
-    }
-    
-    input {
-        width: 45%;
-        height: 6.5rem;
-    }
-    
-    textarea {
-        width: 100%;
-        height: 17rem;
-    }
-    
-    @media (max-width: 980px) {
-        input {
-            width: 100%;
+        
+        #contact {
+            /* height: 54rem; */
+            height: calc(100vh + 2%);
+            /* max-height: 30vh; */
+            background-color: #222428;
+            text-align: center;
+            padding: 6rem 0 8rem 0;
         }
-    }
-    
-    #contact button {
-        margin-top: 2rem;
-        width: 10rem;
-    }
-    /* -------------------------------------- 
+        
+        #contact h3 {
+            color: #ffffff;
+        }
+        
+        form {
+            display: inline-flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            width: 90%;
+        }
+        
+        input,
+        textarea {
+            background-color: #222428;
+            margin: 2rem 0 0 5%;
+            border: solid 0.1em #00C6FF;
+            padding: 3rem;
+            color: #ffffff;
+            font-size: 1.5rem;
+        }
+        
+        input {
+            width: 45%;
+            height: 6.5rem;
+        }
+        
+        textarea {
+            width: 100%;
+            height: 17rem;
+        }
+        
+        @media (max-width: 980px) {
+            input {
+                width: 100%;
+            }
+        }
+        
+        #contact button {
+            margin-top: 2rem;
+            width: 10rem;
+        }
+        /* -------------------------------------- 
 FOOTER
 /* -------------------------------------- */
-    
-    footer {
-        text-align: center;
-        background-color: #121d17;
-        height: 6rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
-    
-    footer p {
-        color: #ffffff;
-    }
-    /* light blue color background: #E5F8FC
+        
+        footer {
+            text-align: center;
+            background-color: #121d17;
+            height: 6rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        footer p {
+            color: #ffffff;
+        }
+        /* light blue color background: #E5F8FC
 box shadow color: #B0E5ED */
