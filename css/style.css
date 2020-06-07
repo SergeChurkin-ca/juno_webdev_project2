@@ -8,7 +8,8 @@ a {
 
 button {
     width: 10rem;
-    height: 5rem;
+    /* width: 156px; */
+    height: 3.7rem;
     background-color: #00476a;
     color: #ffffff;
 }
@@ -20,11 +21,9 @@ p {
 }
 
 
-/* -------------------------------------- */
-
-
-/*  NAVIGATION 
-/* -------------------------------------- */
+/* --------------------------------------
+ NAVIGATION -----------------------------
+----------------------------------------- */
 
 .wrapper {
     max-width: 1600px;
@@ -72,8 +71,23 @@ nav ul li {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    padding: 1rem;
+    padding: 0 1.7rem;
 }
+
+nav a:hover::after,
+nav a:focus::after {
+    border-top: 0.3rem solid rgb(116, 224, 253);
+    display: block;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    content: "";
+}
+
+
+/* --------------------------------------
+HEADER -----------------------------
+----------------------------------------- */
 
 header {
     display: inliine-flex;
@@ -82,21 +96,24 @@ header {
     background-position: center center;
     background-repeat: no-repeat;
     padding-bottom: 10rem;
+    min-height: 35.5vh;
+}
+
+@media(min-width: 2000px) {
+    header {
+        height: calc(34vh + 30rem);
+    }
 }
 
 .heading {
-    margin: 1em;
+    margin-left: 5rem;
     width: 50%;
 }
 
 
-/* -------------------------------------- */
-
-
-/*  BLOG */
-
-
-/* -------------------------------------- */
+/* --------------------------------------
+-------- BLOG ------------------------
+-------------------------------------- */
 
 #blog {
     display: flex;
@@ -105,42 +122,59 @@ header {
     min-height: 32vh;
     height: calc(8vh + 20%);
     vertical-align: middle;
+    padding: 2rem;
+    word-spacing: 0.1rem;
+    position: relative;
 }
 
 #blog .wrapper {
-    width: 60%;
+    width: 65%;
+    line-height: 1.5rem;
+}
+
+#blog h2::after {
+    border-top: 0.3rem solid rgb(116, 224, 253);
+    display: block;
+    position: relative;
+    margin: 0.7rem auto;
+    width: 10%;
+    content: "";
+}
+
+#blog h3 {
+    width: 40%;
+    display: inline-flex;
+    line-height: 2.5rem;
 }
 
 .fa-chevron-right,
 .fa-chevron-left {
     display: flex;
     padding: 2rem;
-    font-size: 5rem;
+    font-size: 3.5rem;
+    position: absolute;
+    top: 40%;
 }
 
 .fa-chevron-right {
-    float: right;
+    right: 10%;
 }
 
 .fa-chevron-left {
-    float: left;
+    left: 10%;
 }
 
 
-/* -------------------------------------- */
-
-
-/*  ADVENTURES */
-
-
-/* -------------------------------------- */
+/* --------------------------------------
+ ADVENTURES
+-------------------------------------- */
 
 #adventures {
     display: flex;
     background-color: #e5f8fc;
     text-align: center;
-    height: calc(100% - 20rem);
-    padding: 3rem 0 20rem 0;
+    /* height: calc(100% - 20rem); */
+    padding: 5rem 0 20rem 0;
 }
 
 #adventures ul {
@@ -151,8 +185,10 @@ header {
 }
 
 .image-container {
-    width: 380px;
-    height: 380px;
+    /* width: 380px;
+    height: 380px; */
+    width: 24rem;
+    height: 24rem;
     position: relative;
     overflow: hidden;
     border-radius: 50%;
@@ -171,34 +207,33 @@ header {
     color: #ffffff;
     background-color: #0e191e;
     position: absolute;
-    top: 19rem;
+    top: 17.3rem;
     left: -2rem;
     width: 200px;
-    height: 80px;
+    height: 4.3rem;
+}
+
+h4 {
+    margin: 1rem auto;
 }
 
 
-/* -------------------------------------- */
-
-
-/*  SHOP */
-
-
-/* -------------------------------------- */
+/* --------------------------------------
+SHOP
+-------------------------------------- */
 
 #shop {
     width: 100%;
     display: flex;
-    height: calc(100% - 20rem);
+    height: calc(55vh + 20%);
     justify-content: center;
     align-items: baseline;
-    padding: 3rem;
+    padding: 3rem 0 11rem 3rem;
 }
 
 #shop .wrapper {
     display: flex;
     flex-wrap: wrap;
-    /*     width: calc((100%/2) - 4%);*/
     align-items: flex-start;
 }
 
@@ -207,8 +242,8 @@ header {
     top: 5rem;
     box-shadow: 3rem 3rem 0 rgba(157, 216, 229, 0.99);
     display: flex;
-    min-width: 25rem;
-    width: calc((100% / 2) - 4rem);
+    min-width: 20rem;
+    width: calc(50% - 5em - 5em);
 }
 
 .shop-info {
@@ -219,24 +254,23 @@ header {
 }
 
 @media (max-width: 980px) {
-    #shop .wrapper {}
+    #shop .wrapper,
+    #shop img,
     .shop-info {
-        width: 100%;
+        width: 90%;
     }
 }
 
 
-/* -------------------------------------- *
-/*  CONTACT */
-
-
-/* -------------------------------------- */
+/* --------------------------------------
+CONTACT
+-------------------------------------- */
 
 #contact {
     height: 54rem;
     background-color: #222428;
     text-align: center;
-    padding: 7rem;
+    padding: 6rem;
 }
 
 #contact h3 {
@@ -253,9 +287,9 @@ form {
 input,
 textarea {
     background-color: #222428;
-    margin: 1rem 0 0 5%;
+    margin: 2rem 0 0 5%;
     border: solid 0.1em #00C6FF;
-    padding: 2rem;
+    padding: 3rem;
     color: #ffffff;
 }
 
@@ -266,7 +300,13 @@ input {
 
 textarea {
     width: 100%;
-    height: 23rem;
+    height: 16rem;
+}
+
+@media (max-width: 980px) {
+    input {
+        width: 100%;
+    }
 }
 
 #contact button {
@@ -274,15 +314,13 @@ textarea {
 }
 
 
-/* -------------------------------------- *
-/*  CONTACT */
-
-
+/* -------------------------------------- 
+FOOTER
 /* -------------------------------------- */
 
 footer {
     text-align: center;
-    background-color: #0e2018;
+    background-color: #121d17;
     height: 6rem;
     padding: 1rem;
 }
