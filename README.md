@@ -1,4 +1,7 @@
 # Juno College of Technology - Project 2: responsive design conversion project
+
+https://sergechurkin-ca.github.io/juno_webdev_project2/index.html
+
 For your final project, you are given the task of building a site from one of the provided designs below. This project is meant to call upon the course has covered and is meant to be challenging. Converting designs is how many developers get their start.
 
 This project must be responsive, meaning it should work on smaller screen sizes, with the smallest screen size being around 360px in width.
